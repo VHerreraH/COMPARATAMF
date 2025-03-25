@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Académica - The Anglo Foundation</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- GSAP para animaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Chart.js para gráficos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Título principal -->
+        <h1 class="text-4xl font-bold text-center mb-8">Oferta Académica - The Anglo Foundation</h1>
+
+        <!-- Tabla 1: Ventajas y Desventajas -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Comparativo de Ventajas y Desventajas</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                    <thead class="bg-gray-200 dark:bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Institución</th>
+                            <th class="px-4 py-2">Ventajas</th>
+                            <th class="px-4 py-2">Desventajas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">The Anglo Foundation</td>
+                            <td class="px-4 py-2">Profesores nativos, enfoque en conversación</td>
+                            <td class="px-4 py-2">Costo elevado</td>
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">Open English</td>
+                            <td class="px-4 py-2">Flexibilidad horaria, acceso 24/7</td>
+                            <td class="px-4 py-2">Menos interacción personal</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Quick Learning</td>
+                            <td class="px-4 py-2">Método rápido, precios competitivos</td>
+                            <td class="px-4 py-2">Calidad variable de profesores</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tabla 2: Costos y Materiales -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Costos y Materiales</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                    <thead class="bg-gray-200 dark:bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Institución</th>
+                            <th class="px-4 py-2">Costo</th>
+                            <th class="px-4 py-2">Fechas de Apertura</th>
+                            <th class="px-4 py-2">Materiales Didácticos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">The Anglo Foundation</td>
+                            <td class="px-4 py-2">$5,000 MXN</td>
+                            <td class="px-4 py-2">Enero, Mayo, Septiembre</td>
+                            <td class="px-4 py-2">Sí</td>
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">Open English</td>
+                            <td class="px-4 py-2">$3,000 MXN</td>
+                            <td class="px-4 py-2">Cualquier momento</td>
+                            <td class="px-4 py-2">Sí</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Quick Learning</td>
+                            <td class="px-4 py-2">$2,500 MXN</td>
+                            <td class="px-4 py-2">Febrero, Junio, Octubre</td>
+                            <td class="px-4 py-2">No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tabla 3: Matrícula -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Matrícula Actual</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                    <thead class="bg-gray-200 dark:bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Institución</th>
+                            <th class="px-4 py-2">Matrícula</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">The Anglo Foundation</td>
+                            <td class="px-4 py-2">10,000</td>
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">Open English</td>
+                            <td class="px-4 py-2">50,000</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Quick Learning</td>
+                            <td class="px-4 py-2">20,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tabla 4: Comentarios -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Comentarios</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                    <thead class="bg-gray-200 dark:bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Institución</th>
+                            <th class="px-4 py-2">Comentarios Favorables</th>
+                            <th class="px-4 py-2">Comentarios Desfavorables</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">The Anglo Foundation</td>
+                            <td class="px-4 py-2">
+                                <ul class="list-disc list-inside">
+                                    <li>Profesores altamente calificados</li>
+                                    <li>Ambiente de aprendizaje motivador</li>
+                                    <li>Recursos completos</li>
+                                    <li>Instalaciones modernas</li>
+                                    <li>Enfoque práctico</li>
+                                </ul>
+                            </td>
+                            <td class="px-4 py-2">
+                                <ul class="list-disc list-inside">
+                                    <li>Precios elevados</li>
+                                    <li>Horarios fijos</li>
+                                    <li>Ubicación limitada</li>
+                                    <li>Proceso de admisión riguroso</li>
+                                    <li>Falta de flexibilidad</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">Open English</td>
+                            <td class="px-4 py-2">
+                                <ul class="list-disc list-inside">
+                                    <li>Acceso 24/7</li>
+                                    <li>Flexibilidad</li>
+                                    <li>Plataforma fácil de usar</li>
+                                    <li>Costos accesibles</li>
+                                    <li>Variedad de cursos</li>
+                                </ul>
+                            </td>
+                            <td class="px-4 py-2">
+                                <ul class="list-disc list-inside">
+                                    <li>Interacción limitada</li>
+                                    <li>Calidad variable</li>
+                                    <li>Dependencia de internet</li>
+                                    <li>Falta de práctica presencial</li>
+                                    <li>Materiales genéricos</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Quick Learning</td>
+                            <td class="px-4 py-2">
+                                <ul class="list-disc list-inside">
+                                    <li>Método rápido</li>
+                                    <li>Precios competitivos</li>
+                                    <li>Horarios flexibles</li>
+                                    <li>Enfoque en conversación</li>
+                                    <li>Grupos reducidos</li>
+                                </ul>
+                            </td>
+                            <td class="px-4 py-2">
+                                <ul class="list-disc list-inside">
+                                    <li>Calidad variable</li>
+                                    <li>Falta de materiales</li>
+                                    <li>Duración corta</li>
+                                    <li>Poca profundidad</li>
+                                    <li>Falta de reconocimiento</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Tabla 5: Matrícula Antes y Después de la Pandemia -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Matrícula Antes y Después de la Pandemia</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
+                    <thead class="bg-gray-200 dark:bg-gray-700">
+                        <tr>
+                            <th class="px-4 py-2">Institución</th>
+                            <th class="px-4 py-2">Matrícula Antes de la Pandemia</th>
+                            <th class="px-4 py-2">Matrícula Después de la Pandemia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">The Anglo Foundation</td>
+                            <td class="px-4 py-2">12,000</td>
+                            <td class="px-4 py-2">10,000</td>
+                        </tr>
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-2">Open English</td>
+                            <td class="px-4 py-2">55,000</td>
+                            <td class="px-4 py-2">50,000</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2">Quick Learning</td>
+                            <td class="px-4 py-2">25,000</td>
+                            <td class="px-4 py-2">20,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Gráfico de Matrícula Actual -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Matrícula Actual</h2>
+            <canvas id="matriculaActualChart" class="w-full h-64"></canvas>
+        </section>
+
+        <!-- Gráfico de Matrícula Últimos 5 Años -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Matrícula Últimos 5 Años</h2>
+            <canvas id="matriculaPasadaChart" class="w-full h-64"></canvas>
+        </section>
+
+        <!-- Gráfico de Matrícula Próximos 5 Años -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Matrícula Próximos 5 Años</h2>
+            <canvas id="matriculaFuturaChart" class="w-full h-64"></canvas>
+        </section>
+
+        <!-- Gráfico de Becas -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Becas Otorgadas</h2>
+            <canvas id="becasChart" class="w-full h-64"></canvas>
+        </section>
+
+        <!-- Gráfico de Ingresos Netos -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Ingresos Netos (Millones de USD)</h2>
+            <canvas id="ingresosNetosChart" class="w-full h-64"></canvas>
+        </section>
+
+        <!-- Botones de Descarga -->
+        <section class="mb-8">
+            <button onclick="downloadCSV()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <i class="fas fa-download mr-2"></i>Descargar Datos en CSV
+            </button>
+            <button onclick="downloadChart()" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-4">
+                <i class="fas fa-image mr-2"></i>Descargar Gráfico en PNG
+            </button>
+        </section>
+
+        <!-- Cambio de Tema -->
+        <section class="mb-8">
+            <button onclick="toggleTheme()" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                <i class="fas fa-adjust mr-2"></i>Cambiar Tema
+            </button>
+        </section>
+    </div>
+
+    <script>
+        // Configuración del gráfico de matrícula actual
+        const ctxMatriculaActual = document.getElementById('matriculaActualChart').getContext('2d');
+        const matriculaActualChart = new Chart(ctxMatriculaActual, {
+            type: 'bar',
+            data: {
+                labels: ['The Anglo Foundation', 'Open English', 'Quick Learning'],
+                datasets: [{
+                    label: 'Matrícula Actual',
+                    data: [10000, 50000, 20000],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Configuración del gráfico de matrícula últimos 5 años
+        const ctxMatriculaPasada = document.getElementById('matriculaPasadaChart').getContext('2d');
+        const matriculaPasadaChart = new Chart(ctxMatriculaPasada, {
+            type: 'line',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022'],
+                datasets: [
+                    {
+                        label: 'The Anglo Foundation',
+                        data: [8000, 8500, 9000, 9500, 10000],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Open English',
+                        data: [40000, 42000, 45000, 48000, 50000],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Quick Learning',
+                        data: [15000, 16000, 17000, 18000, 20000],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Configuración del gráfico de matrícula próximos 5 años
+        const ctxMatriculaFutura = document.getElementById('matriculaFuturaChart').getContext('2d');
+        const matriculaFuturaChart = new Chart(ctxMatriculaFutura, {
+            type: 'line',
+            data: {
+                labels: ['2023', '2024', '2025', '2026', '2027'],
+                datasets: [
+                    {
+                        label: 'The Anglo Foundation',
+                        data: [11000, 12000, 13000, 14000, 15000],
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Open English',
+                        data: [52000, 54000, 56000, 58000, 60000],
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Quick Learning',
+                        data: [21000, 22000, 23000, 24000, 25000],
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Configuración del gráfico de becas
+        const ctxBecas = document.getElementById('becasChart').getContext('2d');
+        const becasChart = new Chart(ctxBecas, {
+            type: 'bar',
+            data: {
+                labels: ['The Anglo Foundation', 'Open English', 'Quick Learning'],
+                datasets: [{
+                    label: 'Becas Otorgadas',
+                    data: [500, 1000, 300],
+                    backgroundColor: [
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 205, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 205, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Configuración del gráfico de ingresos netos
+        const ctxIngresosNetos = document.getElementById('ingresosNetosChart').getContext('2d');
+        const ingresosNetosChart = new Chart(ctxIngresosNetos, {
+            type: 'bar',
+            data: {
+                labels: ['The Anglo Foundation', 'Open English', 'Quick Learning'],
+                datasets: [{
+                    label: 'Ingresos Netos (Millones de USD)',
+                    data: [47.5, 245, 98.5], // (Matrícula * Costo - Becas) / 1,000,000
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Función para descargar datos en CSV
+        function downloadCSV() {
+            const data = [
+                ['Institución', 'Matrícula Actual', 'Becas Otorgadas', 'Ingresos Netos (Millones de USD)'],
+                ['The Anglo Foundation', 10000, 500, 47.5],
+                ['Open English', 50000, 1000, 245],
+                ['Quick Learning', 20000, 300, 98.5]
+            ];
+            const csvContent = "data:text/csv;charset=utf-8," + data.map(e => e.join(",")).join("\n");
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "datos.csv");
+            document.body.appendChild(link);
+            link.click();
+        }
+
+        // Función para descargar el gráfico en PNG
+        function downloadChart() {
+            const link = document.createElement('a');
+            link.download = 'grafico.png';
+            link.href = document.getElementById('matriculaActualChart').toDataURL();
+            link.click();
+        }
+
+        // Función para cambiar el tema
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+            localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+        }
+
+        // Cargar el tema guardado
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.body.classList.add(savedTheme);
+    </script>
+</body>
+</html>
+
